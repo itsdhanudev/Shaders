@@ -1,1 +1,0 @@
-{"code":"#version 320 es\nprecision highp float;\n\nlayout(location \u003d 0) out vec4 out_0;\n\nuniform vec4 diffuse;\n\nin float f_height;\n\nvoid main() {\n    vec3 bottom \u003d diffuse.rgb * 0.6;\n    vec3 top    \u003d diffuse.rgb * 1.2;\n\n    vec3 color \u003d mix(bottom, top, f_height);\n    out_0 \u003d vec4(color, 1.0);\n}\n"}
