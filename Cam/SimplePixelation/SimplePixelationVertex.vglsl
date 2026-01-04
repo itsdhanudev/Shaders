@@ -1,0 +1,1 @@
+{"code":"#version 300 es\nprecision [highp] float;\n\nin vec4 a_position;\nin vec2 a_texCoord;\n\nuniform mat4 u_MMatrix;\n\nout vec2 o_screenCoords;\n\nvoid main() {\n    gl_Position \u003d u_MMatrix * a_position;\n    o_screenCoords \u003d a_texCoord;\n}","e":0,"vs":"\u0026e4@seg$5!68#@asd77j#s@#*f@#%64a#eq!54@"}
